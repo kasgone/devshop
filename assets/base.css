@@ -1,5 +1,18 @@
 /* Color custom properties */
 
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url(Lato-Regular.ttf)format("truetype");
+}
+
+
+@font-face {
+  font-family: 'RobotoCondensed-Regular';
+  src: url(RobotoCondensed-Regular.ttf)format("truetype");
+}
+
+/* Color custom properties */
+
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
@@ -1881,8 +1894,8 @@ input[type='checkbox'] {
   }
 
   .header--middle-left {
-    grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto auto 1fr;
+    grid-template-areas: 'navigation  heading  icons';
+    grid-template-columns: auto auto auto ;
     column-gap: 2rem;
   }
 
