@@ -1909,7 +1909,7 @@ input[type='checkbox'] {
 
   .header--middle-left {
     grid-template-areas: 'navigation heading icons';
-    grid-template-columns: auto ;
+    grid-template-columns: 30% 40% 30% ;
     margin: auto;
     column-gap: 0.1rem;
   }
@@ -1981,9 +1981,7 @@ input[type='checkbox'] {
 
   .header__heading,
   .header__heading-link {
-    margin: auto;
-    margin-right: 18rem;
-
+    margin: auto ;
   }
 
   .header--top-center .header__heading-link,
