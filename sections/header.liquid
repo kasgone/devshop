@@ -39,6 +39,8 @@
   .list-menu--inline {
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content:space-between;
+    
   }
 
   summary.list-menu__item {
@@ -49,6 +51,11 @@
     display: flex;
     align-items: center;
     line-height: calc(1 + 0.3 / var(--font-body-scale));
+    font-family: var(--font-heading-family);
+    font-size: 20px;
+    background-color:rgb(var(--color-base-background-1));
+    z-index: 10;
+    position: relative;
   }
 
   .list-menu__item--link {
