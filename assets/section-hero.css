@@ -1,18 +1,38 @@
 .header-container {
-    margin-top: 100px;
+    margin-top: calc(5rem + var(--page-width-margin));
+    margin-bottom: calc(5rem + var(--page-width-margin));
+    position: relative;
+}
+
+.header-container::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #fffff;/*rgb(var(--color-foreground)); */
+    opacity: 50%;
+    z-index: 1;
+
 }
 
 .header-container h1 {
     display:flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: calc(5rem + var(--page-width-margin));
 }
 
 .header-container img {
-    width: 500px;
+    width: 40%;
 }
 
 .header-container span {
     margin-top: 20px;
-    font-size: 19px;
+    font-size: auto;
+    margin-top: calc(5rem + var(--page-width-margin));
+    margin-bottom: calc(5rem + var(--page-width-margin));
 }
